@@ -1,0 +1,80 @@
+{
+  "captured_at_utc": "2026-10-28T23:12:29.690194+00:00",
+  "base_url": "http://127.0.0.1:5173",
+  "mode": "Real frontend and compiled native backend; no API response mocking",
+  "screens": [
+    {
+      "file": "screenshots/01-login.png",
+      "title": "Authentification",
+      "route": "/",
+      "scope": "Interface réelle ; aucune connexion encore effectuée"
+    },
+    {
+      "file": "screenshots/02-login-validation.png",
+      "title": "Validation des champs obligatoires",
+      "route": "/",
+      "scope": "Soumission vide côté frontend ; aucun identifiant envoyé"
+    },
+    {
+      "file": "screenshots/03-forgot-password.png",
+      "title": "Mot de passe oublié",
+      "route": "/forgot-password",
+      "scope": "Formulaire affiché sans soumission ni envoi de mail"
+    },
+    {
+      "file": "screenshots/04-reset-password.png",
+      "title": "Lien de réinitialisation absent",
+      "route": "/reset-password",
+      "scope": "État réel sans token ; aucun mot de passe modifié"
+    },
+    {
+      "file": "screenshots/05-manager-dashboard.png",
+      "title": "Tableau de bord manager",
+      "route": "/manager",
+      "scope": "Consultation authentifiée réelle ; données personnelles et tableaux masqués. Les erreurs éventuelles restent visibles.",
+      "captured_at_utc": "2026-10-28T23:12:49.778846+00:00"
+    },
+    {
+      "file": "screenshots/10-kanban.png",
+      "title": "Projets et Kanban",
+      "route": "/kanban",
+      "scope": "Consultation authentifiée réelle ; données personnelles et tableaux masqués. Les erreurs éventuelles restent visibles.",
+      "captured_at_utc": "2026-10-28T23:12:56.770224+00:00"
+    }
+  ],
+  "blocked_writes": 0,
+  "api_statuses": {
+    "/api/auth/login": [
+      401,
+      200
+    ],
+    "/api/users/auth/:id": [
+      200,
+      504
+    ],
+    "/api/notifications/unread-count": [
+      404
+    ],
+    "/api/projects": [
+      500
+    ],
+    "/api/users/directory": [
+      200
+    ],
+    "/api/users/directory/departments": [
+      200
+    ]
+  },
+  "limitations": [
+    "Admin login returned HTTP 401 in the first capture attempt; authenticated admin screens are not included.",
+    "10-kanban: page unavailable or loading timeout"
+  ],
+  "environment": {
+    "frontend": "Vite, local source",
+    "backend": "Existing compiled Spring Boot jars, native Java 17",
+    "docker": "Unavailable during capture; no Docker execution claimed",
+    "database_schema": "Hibernate validate; no schema migration requested",
+    "user_service_profile": "Existing local profile; not evidence of production authorization enforcement",
+    "business_writes": "None submitted; authentication/session operations allowed"
+  }
+}

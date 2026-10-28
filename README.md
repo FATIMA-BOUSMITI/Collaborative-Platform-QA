@@ -85,11 +85,19 @@ Collaborative-Platform-QA/
 └── pom.xml
 ```
 
-## Aperçu de l'interface testée
+## Démonstration visuelle
 
-![Capture de diagnostic Kanban](docs/assets/kanban-diagnostic.png)
+**[Voir la démonstration commentée du frontend et du backend](docs/demo/README.md)** — 6 captures réelles, statuts HTTP observés et limites de l'environnement.
 
-Capture historique issue des artefacts Selenium : espace projets/Kanban avec un compte synthétique et chargement des projets en cours. Elle illustre l'interface observée pendant le diagnostic, **pas la réussite d'un parcours Kanban complet**.
+| Connexion | Validation du formulaire |
+| --- | --- |
+| ![Connexion](docs/demo/screenshots/01-login.png) | ![Champs obligatoires](docs/demo/screenshots/02-login-validation.png) |
+
+![Tableau de bord après authentification manager](docs/demo/screenshots/05-manager-dashboard.png)
+
+La connexion manager et son tableau de bord ont été affichés avec succès. Dans la démonstration détaillée, la capture Kanban conserve l'erreur backend 500 sur les projets ; elle ne représente pas une validation complète du parcours. Les informations personnelles sont masquées. Les captures administrateur ne sont pas incluses, car le compte configuré a reçu HTTP 401.
+
+Une galerie interactive est fournie dans `docs/demo/index.html` : après clonage, ouvrir ce fichier dans le navigateur. Les résultats de tests automatisés restent distincts de cette démonstration.
 
 ## Démarrage
 
