@@ -1,0 +1,8 @@
+{
+  "description": "One-time identifiers for pre-existing, isolated QA fixtures. Copy to fixtures.local.json; never commit it.",
+  "adminUserId": "",
+  "directorUserId": "",
+  "projectManagerUserId": "",
+  "employeeUserId": "",
+  "projectId": ""
+}

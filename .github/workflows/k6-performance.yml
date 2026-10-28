@@ -1,0 +1,40 @@
+name: k6 Performance
+
+on:
+  workflow_dispatch:
+    inputs:
+      scenario:
+        description: "Performance scenario"
+        required: true
+        default: smoke/projects-read.js
+        type: choice
+        options:
+          - smoke/projects-read.js
+          - load/projects-read.js
+          - stress/projects-read.js
+
+jobs:
+  performance:
+    runs-on: ubuntu-latest
+    environment: qa
+    env:
+      K6_BASE_URL: ${{ vars.K6_BASE_URL }}
+      K6_ACCESS_TOKEN: ${{ secrets.K6_ACCESS_TOKEN }}
+      K6_ALLOW_TEST_ENVIRONMENT: "true"
+    steps:
+      - uses: actions/checkout@v4
+      - name: Require an explicitly configured QA target
+        run: test -n "$K6_BASE_URL"
+      - name: Run selected read-only scenario
+        uses: grafana/k6-action@v0.3.1
+        with:
+          filename: performance/k6/${{ inputs.scenario }}
+      - name: Upload k6 summary
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: k6-output
+          path: |
+            *.json
+            *.html
+          if-no-files-found: ignore

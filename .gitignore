@@ -1,0 +1,22 @@
+/target/
+/reports/
+/allure-results/
+/allure-report/
+/screenshots/
+/performance/results/
+*.log
+.env
+.env.*
+!.env.example
+config/fixtures.local.json
+config/fixtures-run.json
+
+# Local tools and generated caches
+.venv/
+venv/
+__pycache__/
+*.pyc
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

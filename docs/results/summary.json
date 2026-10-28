@@ -1,0 +1,243 @@
+{
+  "scope": "Latest available XML per suite; historical local evidence, not a new complete execution",
+  "selenium_evidence_date": "2026-10-22",
+  "totals": {
+    "tests": 35,
+    "passed": 29,
+    "failures": 0,
+    "errors": 6,
+    "skipped": 0
+  },
+  "suites": [
+    {
+      "suite": "com.qa.tests.authentication.EmptyLoginValidationTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "passed": 1,
+      "error_types": []
+    },
+    {
+      "suite": "com.qa.tests.authentication.ForgotPasswordValidationTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "passed": 1,
+      "error_types": []
+    },
+    {
+      "suite": "com.qa.tests.authentication.InvalidLoginTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "passed": 1,
+      "error_types": []
+    },
+    {
+      "suite": "com.qa.tests.authentication.LogoutTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "passed": 1,
+      "error_types": []
+    },
+    {
+      "suite": "com.qa.tests.authentication.ResetPasswordValidationTest",
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "passed": 2,
+      "error_types": []
+    },
+    {
+      "suite": "com.qa.tests.authentication.ValidLoginTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "passed": 1,
+      "error_types": []
+    },
+    {
+      "suite": "com.qa.tests.contracts.PageObjectRegressionTest",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "passed": 4,
+      "error_types": []
+    },
+    {
+      "suite": "com.qa.tests.departments.DepartmentCrudTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "passed": 1,
+      "error_types": []
+    },
+    {
+      "suite": "com.qa.tests.kanban.KanbanTaskWorkflowTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 1,
+      "skipped": 0,
+      "passed": 0,
+      "error_types": [
+        "org.openqa.selenium.StaleElementReferenceException"
+      ]
+    },
+    {
+      "suite": "com.qa.tests.kanban.KanbanUiTest",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "passed": 3,
+      "error_types": []
+    },
+    {
+      "suite": "com.qa.tests.navigation.AdminRouteAccessTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "passed": 1,
+      "error_types": []
+    },
+    {
+      "suite": "com.qa.tests.navigation.ProtectedRouteTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "passed": 1,
+      "error_types": []
+    },
+    {
+      "suite": "com.qa.tests.permissions.PermissionUpdateTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 1,
+      "skipped": 0,
+      "passed": 0,
+      "error_types": [
+        "org.openqa.selenium.StaleElementReferenceException"
+      ]
+    },
+    {
+      "suite": "com.qa.tests.roles.RoleListTest",
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "passed": 2,
+      "error_types": []
+    },
+    {
+      "suite": "com.qa.tests.teams.TeamManagementTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "passed": 1,
+      "error_types": []
+    },
+    {
+      "suite": "com.qa.tests.users.UserCreationTest",
+      "tests": 2,
+      "failures": 0,
+      "errors": 1,
+      "skipped": 0,
+      "passed": 1,
+      "error_types": [
+        "org.openqa.selenium.NoSuchSessionException"
+      ]
+    },
+    {
+      "suite": "com.qa.tests.users.UserDeletionTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 1,
+      "skipped": 0,
+      "passed": 0,
+      "error_types": [
+        "org.openqa.selenium.TimeoutException"
+      ]
+    },
+    {
+      "suite": "com.qa.tests.users.UserEditTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 1,
+      "skipped": 0,
+      "passed": 0,
+      "error_types": [
+        "org.openqa.selenium.TimeoutException"
+      ]
+    },
+    {
+      "suite": "com.qa.tests.users.UserEmailValidationTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "passed": 1,
+      "error_types": []
+    },
+    {
+      "suite": "com.qa.tests.users.UserListTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "passed": 1,
+      "error_types": []
+    },
+    {
+      "suite": "com.qa.tests.users.UserRequiredFieldsTest",
+      "tests": 5,
+      "failures": 0,
+      "errors": 1,
+      "skipped": 0,
+      "passed": 4,
+      "error_types": [
+        "java.lang.IllegalStateException"
+      ]
+    },
+    {
+      "suite": "com.qa.tests.users.UserRoleAssignmentTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "passed": 1,
+      "error_types": []
+    },
+    {
+      "suite": "com.qa.tests.users.UserSearchTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "passed": 1,
+      "error_types": []
+    }
+  ],
+  "robot": {
+    "generated": "2026-10-21T13:12:45.723299",
+    "pass": 2,
+    "fail": 0,
+    "skip": 0
+  },
+  "k6_config_unit_tests": {
+    "passed": 3,
+    "failed": 0
+  },
+  "k6_load_test": "No measured performance result published"
+}
